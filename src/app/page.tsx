@@ -1,6 +1,5 @@
 import React from "react";
 import { FaStethoscope } from "react-icons/fa";
-import { Geist } from "next/font/google";
 
 export default function Page() {
   return (
