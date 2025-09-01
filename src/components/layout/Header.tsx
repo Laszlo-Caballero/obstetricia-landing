@@ -14,28 +14,28 @@ export default function Header() {
 
       <div className="flex gap-5">
         <Link
-          href="#"
+          href="/"
           className="px-3 py-1 rounded-md bg-FondoAzul text-white font-semibold"
         >
-          Home
+          Inicio
         </Link>
         <Link
-          href="#"
+          href="servicios"
           className="px-3 py-1 rounded-md text-blackBluee font-semibold"
         >
-          Services
+          Servicios
         </Link>
         <Link
-          href="#"
+          href="blog"
           className="px-3 py-1 rounded-md text-blackBluee font-semibold"
         >
           Blog
         </Link>
         <Link
-          href="#"
+          href="contacto"
           className="px-3 py-1 rounded-md text-blackBluee font-semibold"
         >
-          Contact
+          Contacto
         </Link>
       </div>
     </div>
