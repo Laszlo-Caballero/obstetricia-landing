@@ -10,10 +10,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --color-Skyblue: #EAF6F8;
-  --color-blackBluee: #07313A;
-  --color-azulBorde: #D7E7F2;
-  --color-FondoAzul: #2B9EB3;
+  --font-inter: var(--font-inter);
+  --color-Skyblue: #eaf6f8;
+  --color-blackBluee: #07313a;
+  --color-azulBorde: #d7e7f2;
+  --color-FondoAzul: #2b9eb3;
 }
 
 @media (prefers-color-scheme: dark) {
