@@ -49,6 +49,8 @@ export default function Page() {
           </div>
         </div>
       </div>
+
+      <div className="border w-full"></div>
     </div>
   );
 }
