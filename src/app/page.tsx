@@ -12,6 +12,7 @@ import { TbCalendarEventFilled } from "react-icons/tb";
 import { LuAmbulance } from "react-icons/lu";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { tiempoDesde } from "@/libs/parseDate";
+import CardServices from "@/components/ui/card-services/CardServices";
 
 export default function Page() {
   return (
@@ -77,31 +78,19 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-3 gap-2 w-full">
-            <div className="bg-white rounded-xl border border-bordeColumn m-[24px] p-[16px]">
-              <div className="bg-FondoCeleste w-max p-[10px] rounded-xl">
-                <PiHeartHalfBold className="text-azulServicio" size={20} />
-              </div>
-              <p className="pt-[12px] font-semibold text-blackBluee text-xl">
-                Cuidado Prenatal
-              </p>
-              <p className="pt-[12px] text-grissubtexto text-sm">
-                Chequeos de rutina, exámenes de detección y planes
-                personalizados para un embarazo saludable.
-              </p>
-            </div>
+            <CardServices
+              title="Cuidado Prenatal"
+              description="Chequeos de rutina, exámenes de detección y planes
+                personalizados para un embarazo saludable."
+              icon={<PiHeartHalfBold className="text-azulServicio" size={20} />}
+            />
 
-            <div className="bg-white rounded-xl border border-bordeColumn m-[24px] p-[16px]">
-              <div className="bg-FondoCeleste w-max p-[10px] rounded-xl">
-                <LuBaby className="text-azulServicio" size={20} />
-              </div>
-              <p className="pt-[12px] font-semibold text-blackBluee text-xl">
-                Parto y Nacimiento
-              </p>
-              <p className="pt-[12px] text-grissubtexto text-sm">
-                Opciones de apoyo para el parto con equipos obstétricos
-                experimentados.
-              </p>
-            </div>
+            <CardServices
+              title="Parto y Nacimiento"
+              description="Opciones de apoyo para el parto con equipos obstétricos
+                experimentados."
+              icon={<LuBaby className="text-azulServicio" size={20} />}
+            />
 
             <div className="bg-white rounded-xl border border-bordeColumn m-[24px] p-[16px]">
               <div className="bg-FondoCeleste w-max p-[10px] rounded-xl">
