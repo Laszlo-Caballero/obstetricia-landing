@@ -318,8 +318,8 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="<div className= w-full flex py-[56px] px-[40px]"></div>
       </div>
+      <div className="<div className= w-full flex py-[56px] px-[40px]"></div>
     </div>
   );
 }
