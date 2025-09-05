@@ -1,14 +1,14 @@
 import { ReactNode } from "react";
 import Image from "next/image";
 interface CardImagePostProps {
-  tittle: string;
+  title: string;
   description: string;
   image: string;
   tiempoDesde: String;
 }
 
 export default function CardImagePost({
-  tittle,
+  title,
   description,
   image,
   tiempoDesde,
@@ -23,7 +23,7 @@ export default function CardImagePost({
           height={240}
           className="h-[240px] w-full object-cover rounded-xl"
         />
-        <p className="pt-[20px] font-semibold text-post text-xl">{tittle}</p>
+        <p className="pt-[20px] font-semibold text-post text-xl">{title}</p>
         <p className="font-semibold pt-[12px] text-grissubtexto text-[14px]">
           {description}
         </p>

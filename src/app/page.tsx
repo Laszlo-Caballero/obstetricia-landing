@@ -16,6 +16,7 @@ import CardServices from "@/components/ui/card-services/CardServices";
 import { TbCalendarEvent } from "react-icons/tb";
 import { FiMessageSquare } from "react-icons/fi";
 import CardImagePost from "@/components/ui/card-services/CardImagePost";
+import CardTestimony from "@/components/ui/card-services/CardTestimony";
 
 export default function Page() {
   return (
@@ -140,21 +141,21 @@ export default function Page() {
           <div className="grid grid-cols-3 gap-[16px] w-full px-[24px]">
             <CardImagePost
               image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671440/nzmyctfgqigqpzc5vgfy.webp"
-              tittle="Lista de verificación nutricional para cada trimestre"
+              title="Lista de verificación nutricional para cada trimestre"
               description="Qué comer y qué evitar para mantenerse sanos usted y su bebé."
               tiempoDesde={tiempoDesde("2025-08-26T12:00:00")}
             />
 
             <CardImagePost
               image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671469/b4cafhwzexawzrqoygxr.webp"
-              tittle="Entendiendo sus exámenes prenatales a tiempo"
+              title="Entendiendo sus exámenes prenatales a tiempo"
               description="Análisis de las pruebas más comunes y su importancia de las mismas."
               tiempoDesde={tiempoDesde("2025-08-23T15:00:00")}
             />
 
             <CardImagePost
               image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671362/k5jf85g0igeoiogxlxtd.webp"
-              tittle="Recuperación posparto: Guía semana a semana."
+              title="Recuperación posparto: Guía semana a semana."
               description="Consejos prácticos para la curación y la adaptación después del parto"
               tiempoDesde={tiempoDesde("2025-08-20T19:00:00")}
             />
@@ -174,68 +175,26 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-3 gap-16 w-full px-[17px] ">
-            <div className="bg-white rounded-xl border border-bordeColumn p-[1.5px]">
-              <div className="flex items-center gap-[12px] pt-[12px] pl-[12px]">
-                <div className=" h-full rounded-xl ">
-                  <Image
-                    src="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756846840/wf7gzl1qkjp61oeucvgs.webp"
-                    alt="Avatar"
-                    width={40}
-                    height={40}
-                    className="h-[40px] w-[40px] object-cover rounded-full"
-                  />
-                </div>
-                <p className="pt-[8px] font-semibold text-blackBluee">
-                  German Arteaga
-                </p>
-              </div>
-              <p className="pt-[12px] px-[17px] pb-[17px] font-semibold text-grissubtexto">
-                "El equipo me hizo sentir informada y tranquila durante todo mi
+            <CardTestimony
+              image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756846840/wf7gzl1qkjp61oeucvgs.webp"
+              title="German Arteaga"
+              description="El equipo me hizo sentir informada y tranquila durante todo mi
                 embarazo. Me encantaron los controles semanales y los recursos."
-              </p>
-            </div>
+            />
 
-            <div className="bg-white rounded-xl border border-bordeColumn p-[1.5px]">
-              <div className="flex items-center gap-[12px] pt-[12px] pl-[12px]">
-                <div className=" h-full rounded-xl ">
-                  <Image
-                    src="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756846840/wf7gzl1qkjp61oeucvgs.webp"
-                    alt="Avatar"
-                    width={40}
-                    height={40}
-                    className="h-[40px] w-[40px] object-cover rounded-full"
-                  />
-                </div>
-                <p className="pt-[8px] font-semibold text-blackBluee">
-                  Nadia y Omar
-                </p>
-              </div>
-              <p className="pt-[12px] px-[17px] pb-[17px] font-semibold text-grissubtexto">
-                "Atención compasiva desde el primer día. Cada día me sentí
+            <CardTestimony
+              image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756846840/wf7gzl1qkjp61oeucvgs.webp"
+              title="Nadia y Omar"
+              description="Atención compasiva desde el primer día. Cada día me sentí
                 apoyado y en control."
-              </p>
-            </div>
+            />
 
-            <div className="bg-white rounded-xl border border-bordeColumn p-[1.5px]">
-              <div className="flex items-center gap-[12px] pt-[12px] pl-[12px]">
-                <div className=" h-full rounded-xl ">
-                  <Image
-                    src="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756846840/wf7gzl1qkjp61oeucvgs.webp"
-                    alt="Avatar"
-                    width={40}
-                    height={40}
-                    className="h-[40px] w-[40px] object-cover rounded-full"
-                  />
-                </div>
-                <p className="pt-[8px] font-semibold text-blackBluee">
-                  Priya S.
-                </p>
-              </div>
-              <p className="pt-[12px] px-[17px] pb-[17px] font-semibold text-grissubtexto">
-                "Respetaron mi plan de parto y me explicaron cada opción
+            <CardTestimony
+              image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756846840/wf7gzl1qkjp61oeucvgs.webp"
+              title="Priya S."
+              description="Respetaron mi plan de parto y me explicaron cada opción
                 claramente."
-              </p>
-            </div>
+            />
           </div>
         </div>
       </div>
