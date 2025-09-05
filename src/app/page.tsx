@@ -13,6 +13,8 @@ import { LuAmbulance } from "react-icons/lu";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { tiempoDesde } from "@/libs/parseDate";
 import CardServices from "@/components/ui/card-services/CardServices";
+import { TbCalendarEvent } from "react-icons/tb";
+import { FiMessageSquare } from "react-icons/fi";
 
 export default function Page() {
   return (
@@ -34,7 +36,7 @@ export default function Page() {
             <span className="font-semibold">
               Obstetras de confianza y recursos basados en la evidencia para
               futuros padres.
-            </span>{" "}
+            </span>
             Infórmese, prepárese y encuentre la atención adecuada para usted y
             su creciente familia.
           </p>
@@ -50,7 +52,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="flex p-[13px] border border-imagen rounded-3xl">
+        <div className="flex p-[13px] border border-imagen rounded-3xl h-[326px]">
           <div className="w-[463px] h-[300px] rounded-xl">
             <Image
               src="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671331/rxjesxmo9h5eefgifc3e.webp"
@@ -241,8 +243,8 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-16 w-full px-[24px] ">
-            <div className="bg-white rounded-xl border border-bordeColumn p-[17px]">
+          <div className="grid grid-cols-3 gap-16 w-full px-[17px] ">
+            <div className="bg-white rounded-xl border border-bordeColumn p-[1.5px]">
               <div className="flex items-center gap-[12px] pt-[12px] pl-[12px]">
                 <div className=" h-full rounded-xl ">
                   <Image
@@ -254,7 +256,7 @@ export default function Page() {
                   />
                 </div>
                 <p className="pt-[8px] font-semibold text-blackBluee">
-                  German Arteaga{" "}
+                  German Arteaga
                 </p>
               </div>
               <p className="pt-[12px] px-[17px] pb-[17px] font-semibold text-grissubtexto">
@@ -275,7 +277,7 @@ export default function Page() {
                   />
                 </div>
                 <p className="pt-[8px] font-semibold text-blackBluee">
-                  Nadia y Omar{" "}
+                  Nadia y Omar
                 </p>
               </div>
               <p className="pt-[12px] px-[17px] pb-[17px] font-semibold text-grissubtexto">
@@ -296,8 +298,7 @@ export default function Page() {
                   />
                 </div>
                 <p className="pt-[8px] font-semibold text-blackBluee">
-                  {" "}
-                  Priya S.{" "}
+                  Priya S.
                 </p>
               </div>
               <p className="pt-[12px] px-[17px] pb-[17px] font-semibold text-grissubtexto">
@@ -308,7 +309,30 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="<div className= w-full flex py-[56px] px-[40px]"></div>
+
+      <div className="w-full flex pt-[80px] pb-[56px] px-[64px]">
+        <div className="flex flex-col w-full">
+          <div className="flex justify-center w-full">
+            <div className=" bg-celesteContacto rounded-xl px-[16px] py-[24px] flex justify-between items-center gap-[8px] w-full">
+              <span className=" text-NegroContacto text-[24px] font-semibold max-w-max">
+                ¿Listo para hablar con un obstetra?
+                <p className=" text-NegroContacto font-semibold text-[16px] leading-[24px] mt-[6px]">
+                  Programe una consulta para discutir sus necesidades y próximos
+                  pasos.
+                </p>
+              </span>
+              <div className="flex gap-[12px]">
+                <button className=" flex bg-botonAzul items-center text-letraBlanca gap-[8px] rounded-xl px-[16px] py-[12px]">
+                  <TbCalendarEvent /> Programar consulta
+                </button>
+                <button className=" flex bg-FondoCeleste items-center text-azulServicio font-semibold gap-[8px] rounded-xl px-[16px] py-[12px]">
+                  <FiMessageSquare /> Contactanos
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
