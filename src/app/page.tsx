@@ -15,6 +15,7 @@ import { tiempoDesde } from "@/libs/parseDate";
 import CardServices from "@/components/ui/card-services/CardServices";
 import { TbCalendarEvent } from "react-icons/tb";
 import { FiMessageSquare } from "react-icons/fi";
+import CardImagePost from "@/components/ui/card-services/CardImagePost";
 
 export default function Page() {
   return (
@@ -86,70 +87,41 @@ export default function Page() {
                 personalizados para un embarazo saludable."
               icon={<PiHeartHalfBold className="text-azulServicio" size={20} />}
             />
-
             <CardServices
               title="Parto y Nacimiento"
               description="Opciones de apoyo para el parto con equipos obstétricos
                 experimentados."
               icon={<LuBaby className="text-azulServicio" size={20} />}
             />
-
-            <div className="bg-white rounded-xl border border-bordeColumn m-[24px] p-[16px]">
-              <div className="bg-FondoCeleste w-max p-[10px] rounded-xl">
-                <LuMilk className="text-azulServicio" size={20} />
-              </div>
-              <p className="pt-[12px] font-semibold text-blackBluee text-xl">
-                Apoyo Posnatal
-              </p>
-              <p className="pt-[12px] text-grissubtexto text-sm">
-                Orientación sobre lactancia, planes de recuperación y educación
-                sobre el cuidado del recién nacido.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl border border-bordeColumn m-[24px] p-[16px]">
-              <div className="bg-FondoCeleste w-max p-[10px] rounded-xl">
-                <LuStethoscope className="text-azulServicio" size={20} />
-              </div>
-              <p className="pt-[12px] font-semibold text-blackBluee text-xl">
-                Embarazo de Alto Riesgo
-              </p>
-              <p className="pt-[12px] text-grissubtexto text-sm">
-                Supervisión especializada para afecciones complejas con atención
-                coordinada.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl border border-bordeColumn m-[24px] p-[16px]">
-              <div className="bg-FondoCeleste w-max p-[10px] rounded-xl">
+            <CardServices
+              title="Apoyo Posnatal"
+              description="Orientación sobre lactancia, planes de recuperación y educación sobre el cuidado del recién nacido."
+              icon={<LuMilk className="text-azulServicio" size={20} />}
+            />
+            <CardServices
+              title="Embarazo de Alto Riesgo"
+              description="Supervisión especializada para afecciones complejas con atención coordinada."
+              icon={<LuStethoscope className="text-azulServicio" size={20} />}
+            />
+            <CardServices
+              title="Clases de Preparación para el Parto"
+              description="Supervisión especializada para afecciones complejas con atención coordinada."
+              icon={
                 <TbCalendarEventFilled
                   className="text-azulServicio"
                   size={20}
                 />
-              </div>
-              <p className="pt-[12px] font-semibold text-blackBluee text-xl">
-                Clases de Preparación para el Parto
-              </p>
-              <p className="pt-[12px] text-grissubtexto text-sm">
-                Supervisión especializada para afecciones complejas con atención
-                coordinada.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-xl border border-bordeColumn m-[24px] p-[16px]">
-              <div className="bg-FondoCeleste w-max p-[10px] rounded-xl">
-                <LuAmbulance className="text-azulServicio" size={20} />
-              </div>
-              <p className="pt-[12px] font-semibold text-blackBluee text-xl">
-                Servicio de guardia 24/7
-              </p>
-              <p className="pt-[12px] text-grissubtexto text-sm">
-                Acceso a asesoramiento urgente cuando más lo necesites.
-              </p>
-            </div>
+              }
+            />
+            <CardServices
+              title="Servicio de guardia 24/7"
+              description="Acceso a asesoramiento urgente cuando más lo necesites."
+              icon={<LuAmbulance className="text-azulServicio" size={20} />}
+            />
           </div>
         </div>
       </div>
+
       <div className=" w-full flex py-[56px] px-[40px]">
         <div className="flex flex-col">
           <p className="max-w-max font-semibold text-post pt-[24px] px-[24] text-[34px] leading-[36px]">
@@ -166,68 +138,26 @@ export default function Page() {
           </div>
 
           <div className="grid grid-cols-3 gap-[16px] w-full px-[24px]">
-            <div className="border border-bordeColumn rounded-xl p-[16px]">
-              <div className="w-full rounded-xl">
-                <Image
-                  src="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671440/nzmyctfgqigqpzc5vgfy.webp"
-                  alt="Madre con su bebé"
-                  width={312}
-                  height={240}
-                  className="h-[240px] w-full object-cover rounded-xl"
-                />
-              </div>
-              <p className="pt-[20px] font-semibold text-post text-xl">
-                Lista de verificación nutricional para cada trimestre.
-              </p>
-              <p className="font-semibold pt-[12px] text-grissubtexto text-[14px]">
-                Qué comer y qué evitar para mantenerse sanos usted y su bebé.
-              </p>
-              <p className="font-semibold pt-[12px] text-grissubtexto text-[14px]">
-                {tiempoDesde("2025-08-31T17:00:00")}
-              </p>
-            </div>
+            <CardImagePost
+              image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671440/nzmyctfgqigqpzc5vgfy.webp"
+              tittle="Lista de verificación nutricional para cada trimestre"
+              description="Qué comer y qué evitar para mantenerse sanos usted y su bebé."
+              tiempoDesde={tiempoDesde("2025-08-26T12:00:00")}
+            />
 
-            <div className="border border-bordeColumn rounded-xl p-[16px] ">
-              <div className="w-full rounded-xl">
-                <Image
-                  src="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671469/b4cafhwzexawzrqoygxr.webp"
-                  alt="Doctor con una paciente"
-                  width={312}
-                  height={240}
-                  className="h-[240px] w-full object-cover rounded-xl"
-                />
-              </div>
-              <p className="pt-[20px] font-semibold text-post text-xl">
-                Entendiendo sus exámenes prenatales.
-              </p>
-              <p className="font-semibold pt-[12px] text-grissubtexto text-[14px]">
-                Análisis de las pruebas más comunes y su importancia.
-              </p>
-              <p className="font-semibold pt-[12px] text-grissubtexto text-[14px]">
-                {tiempoDesde("2025-08-29T15:00:00")}
-              </p>
-            </div>
-            <div className="border border-bordeColumn rounded-xl p-[16px]">
-              <div className="w-full rounded-xl">
-                <Image
-                  src="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671362/k5jf85g0igeoiogxlxtd.webp"
-                  alt="Mano de bebé"
-                  width={312}
-                  height={240}
-                  className="h-[240px] w-full object-cover rounded-xl"
-                />
-              </div>
-              <p className="pt-[20px] font-semibold text-post text-xl">
-                Recuperación posparto: Guía semana a semana.
-              </p>
-              <p className="font-semibold pt-[12px] text-grissubtexto text-[14px]">
-                Consejos prácticos para la curación y la adaptación después del
-                parto
-              </p>
-              <p className="font-semibold pt-[12px] text-grissubtexto text-[14px]">
-                {tiempoDesde("2025-08-20T19:00:00")}
-              </p>
-            </div>
+            <CardImagePost
+              image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671469/b4cafhwzexawzrqoygxr.webp"
+              tittle="Entendiendo sus exámenes prenatales a tiempo"
+              description="Análisis de las pruebas más comunes y su importancia de las mismas."
+              tiempoDesde={tiempoDesde("2025-08-23T15:00:00")}
+            />
+
+            <CardImagePost
+              image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671362/k5jf85g0igeoiogxlxtd.webp"
+              tittle="Recuperación posparto: Guía semana a semana."
+              description="Consejos prácticos para la curación y la adaptación después del parto"
+              tiempoDesde={tiempoDesde("2025-08-20T19:00:00")}
+            />
           </div>
         </div>
       </div>
