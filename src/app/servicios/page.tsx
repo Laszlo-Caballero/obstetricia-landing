@@ -16,6 +16,7 @@ import { LuPhone } from "react-icons/lu";
 import { CiMail } from "react-icons/ci";
 import { RiMicAiLine } from "react-icons/ri";
 import { FiMapPin } from "react-icons/fi";
+import Input from "@/components/ui/input/Input";
 
 export default function page() {
   return (
@@ -132,20 +133,12 @@ export default function page() {
             </p>
 
             <form className="mt-4 space-y-4">
-              <label htmlFor="nombre"></label>
-              <input
-                id="nombre"
-                type="text"
-                placeholder="Nombre y apellido"
-                className="w-full rounded-xl border border-bordeColumn px-4 py-3 text-[15px] outline-none"
-              />
+              <Input for="nombre" type="text" placeholder="Nombre y apellido" />
 
-              <label htmlFor="email"></label>
-              <input
-                id="email"
+              <Input
+                for="email"
                 type="email"
                 placeholder="Correo electrónico"
-                className="w-full rounded-xl border border-bordeColumn px-4 py-3 text-[15px] outline-none"
               />
 
               <label htmlFor="servicio"></label>
