@@ -126,7 +126,7 @@ export default function page() {
       </section>
       <div>
         <section className="flex flex-row px-[40px] py-[40px]">
-          <div className="border border-bordeColumn rounded-xl py-[24x] px-[24px]">
+          <div className="border border-bordeColumn rounded-xl w-2/3 py-[24x] px-[24px]">
             <p className="text-blackBluee text-[18px] font-bold pt-[17px] ">
               Solicitar una Cita
             </p>
@@ -181,7 +181,7 @@ export default function page() {
               </button>
             </form>
           </div>
-          <section className="ml-4 py-[24px] pr-[24px] pl-[16px] border border-bordeColumn rounded-xl w-[422px]">
+          <section className="ml-4 py-[24px] pr-[24px] pl-[16px] border border-bordeColumn rounded-xl w-1/3">
             <h1 className="text-lg text-blackBluee px-[17px] font-bold">
               ¿Necesita Orientación?
             </h1>
