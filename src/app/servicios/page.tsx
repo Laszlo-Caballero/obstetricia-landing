@@ -185,7 +185,7 @@ export default function page() {
             <h1 className="text-lg text-blackBluee px-[17px] font-bold">
               ¿Necesita Orientación?
             </h1>
-            <h2 className="text-grissubtexto font-bold text-base px-[17px] pb-[12px]">
+            <h2 className="text-grissubtexto font-semibold text-[15px] px-[17px] pb-[12px]">
               Nuestro equipo puede ayudarte a elegir el servicio adecuado según
               tu etapa y necesidades.
             </h2>
