@@ -99,7 +99,7 @@ export default function page() {
                   id="mensaje"
                   rows={5}
                   placeholder="Escribe tu mensaje aquí"
-                  className="mt-1 w-full rounded-xl border border-bordeColumn  px-4 py-3 text-[15px] text-grissubtexto outline-none"
+                  className="mt-1 w-full h-[120px] rounded-xl border border-bordeColumn resize-none  px-4 py-3 text-[15px] text-grissubtexto outline-none"
                 />
               </div>
 
