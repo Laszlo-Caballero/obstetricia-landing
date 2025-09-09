@@ -114,10 +114,10 @@ export default function page() {
             </form>
           </section>
           <section className="w-1/3 border border-bordeColumn rounded-xl px-4">
-            <h1 className="font-semibold text-blackBluee py-4 text-lg px-1">
+            <h1 className="font-semibold text-blackBluee pt-[17px] text-lg px-1">
               Datos de contacto
             </h1>
-            <div className=" py-2 ">
+            <div>
               <CardContact icon={<FiPhone />} description="(555) 123-4567" />
               <CardContact
                 icon={<CiMail />}
