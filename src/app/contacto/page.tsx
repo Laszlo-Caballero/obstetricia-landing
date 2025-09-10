@@ -23,8 +23,8 @@ export default function page() {
             </p>
           </span>
           <div className="flex flex-row justify-between">
-            <p className="font-bold text-[28px] leading-100% text-azulLeer">
-              Contacto y Ubicación
+            <p className="font-bold text-[28px] leading-100% text-azulLeer pl-2">
+              Contacto
             </p>
             <button className="font-semibold flex gap-[2px] py-[12.5px] px-[16px]  rounded-xl bg-botonAzul items-center text-letraBlanca text-sm">
               <CgNotes />
