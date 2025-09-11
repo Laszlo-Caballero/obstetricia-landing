@@ -40,7 +40,11 @@ export default function CardMap() {
           mapId="e4ce84c3f2e1437a"
         >
           <AdvancedMarker position={position} onClick={() => setOpen(true)}>
-            <Pin background={"red"} borderColor={"red"} glyphColor={"red"} />
+            <Pin
+              background={"red"}
+              borderColor={"darkred"}
+              glyphColor={"darkred"}
+            />
           </AdvancedMarker>
         </Map>
       </div>

@@ -16,7 +16,7 @@ import CardMap from "@/components/ui/card-services/CardMap";
 export default function page() {
   return (
     <div>
-      <div className="w-full h-full bg-FondoCeleste">
+      <div className="w-full h-full ">
         <section className="py-[40px] px-[40px] w-full">
           <span className="flex gap-[2] py-[6px] px-[10px] rounded-xl bg-compassionate max-w-max">
             <LuMessageSquareHeart className="text-care size-4" />
@@ -26,7 +26,7 @@ export default function page() {
           </span>
           <div className="flex flex-row justify-between">
             <p className="font-bold text-[28px] leading-100% text-azulLeer pl-2">
-              Contacto
+              Contacto y Datos
             </p>
             <button className="font-semibold flex gap-[2px] py-[12.5px] px-[16px]  rounded-xl bg-botonAzul items-center text-letraBlanca text-sm">
               <CgNotes />
