@@ -30,7 +30,7 @@ export default function CardMap() {
 
   return (
     <APIProvider apiKey={process.env.NEXT_PUBLIC_API_KEY || ""}>
-      <div className="w-full h-[270px]">
+      <div className="w-full h-[270px] justify-center">
         <Map
           zoom={camara.zoom}
           center={camara.center}
