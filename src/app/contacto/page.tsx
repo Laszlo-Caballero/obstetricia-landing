@@ -10,6 +10,8 @@ import { LuMapPin } from "react-icons/lu";
 import { LuClock } from "react-icons/lu";
 import { TbPhoneCall } from "react-icons/tb";
 import { BsCalendarEvent } from "react-icons/bs";
+import Intro from "@/components/ui/card-services/CardMap";
+import CardMap from "@/components/ui/card-services/CardMap";
 
 export default function page() {
   return (
@@ -132,6 +134,10 @@ export default function page() {
                 description=" 123 Care Ave, Suite 200"
               />
             </div>
+            <div className="border border-bordeColumn rounded-xl w-full h-[270px] mt-2">
+              <CardMap />
+            </div>
+
             <div className=" flex flex-col py-3 gap-3">
               <button
                 type="submit"
