@@ -20,8 +20,8 @@ import CardTestimony from "@/components/ui/card-services/CardTestimony";
 
 export default function Page() {
   return (
-    <div className="h-full w-full">
-      <div className="pt-[56px] flex pb-[48px] px-[40px]">
+    <div className="h-full w-full flex flex-col justify-center items-center">
+      <div className="pt-[56px] flex pb-[48px] px-[40px] w-full max-w-[1920px] ">
         <div className="border border-white w-full py-[15px] ">
           <span className="flex gap-x-[6px] bg-compassionate max-w-max rounded-xl p-1">
             <PiStarFourLight className="text-care size-4" />
