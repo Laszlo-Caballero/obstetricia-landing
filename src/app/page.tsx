@@ -20,7 +20,7 @@ import CardTestimony from "@/components/ui/card-services/CardTestimony";
 
 export default function Page() {
   return (
-    <div className="h-full w-full flex flex-col justify-center items-center">
+    <div className="h-full w-full flex flex-col justify-center items-center bg-full">
       <div className="pt-[56px] flex pb-[48px] px-[40px] w-full max-w-[1920px] ">
         <div className="border border-white w-full py-[15px] ">
           <span className="flex gap-x-[6px] bg-compassionate max-w-max rounded-xl p-1">
@@ -67,8 +67,8 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="border border-FondoCeleste w-full py-[56px] flex px-[40px] bg-FondoCeleste">
-        <div className="flex flex-col">
+      <div className="border border-FondoCeleste bg-FondoCeleste w-full flex flex-col justify-center items-center">
+        <div className=" py-[56px] flex flex-col px-[40px] max-w-[1920px] ">
           <p className="max-w-max font-semibold text-azulServicio pt-[24px] pl-[24px] text-[34px] leading-[36px]">
             Nuestros Servicios
           </p>
@@ -123,58 +123,56 @@ export default function Page() {
         </div>
       </div>
 
-      <div className=" w-full flex py-[56px] px-[40px]">
-        <div className="flex flex-col">
-          <p className="max-w-max font-semibold text-post pt-[24px] px-[24] text-[34px] leading-[36px]">
-            Ultimos Posts
+      <div className=" w-full flex flex-col max-w-[1920px] py-[56px] px-[40px] bg-full">
+        <p className="max-w-max font-semibold text-post pt-[24px] px-[24] text-[34px] leading-[36px]">
+          Ultimos Posts
+        </p>
+        <div className="flex justify-between items-center pt-[8px] pb-[24px] px-[24px]">
+          <p className="max-w-max font-semibold text-grissubtexto">
+            Perspectivas, consejos e historias reales de nuestro equipo de
+            atención.
           </p>
-          <div className="flex justify-between items-center pt-[8px] pb-[24px] px-[24px]">
-            <p className="max-w-max font-semibold text-grissubtexto">
-              Perspectivas, consejos e historias reales de nuestro equipo de
-              atención.
-            </p>
-            <button className=" flex bg-bordeColumn items-center text-blackBluee gap-[8px] rounded-xl px-[16px] py-[12px] font-semibold size[14px] leading-[20px]">
-              <FaArrowRightLong /> Ver más
-            </button>
-          </div>
+          <button className=" flex bg-bordeColumn items-center text-blackBluee gap-[8px] rounded-xl px-[16px] py-[12px] font-semibold size[14px] leading-[20px]">
+            <FaArrowRightLong /> Ver más
+          </button>
+        </div>
 
-          <div className="grid grid-cols-3 gap-[16px] w-full px-[24px]">
-            <CardImagePost
-              image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671440/nzmyctfgqigqpzc5vgfy.webp"
-              title="Lista de verificación nutricional para cada trimestre"
-              description="Qué comer y qué evitar para mantenerse sanos usted y su bebé."
-              tiempoDesde={tiempoDesde("2025-08-26T12:00:00")}
-            />
+        <div className="grid grid-cols-3 gap-[16px] w-full px-[24px]">
+          <CardImagePost
+            image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671440/nzmyctfgqigqpzc5vgfy.webp"
+            title="Lista de verificación nutricional para cada trimestre"
+            description="Qué comer y qué evitar para mantenerse sanos usted y su bebé."
+            tiempoDesde={tiempoDesde("2025-08-26T12:00:00")}
+          />
 
-            <CardImagePost
-              image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671469/b4cafhwzexawzrqoygxr.webp"
-              title="Entendiendo sus exámenes prenatales a tiempo"
-              description="Análisis de las pruebas más comunes y su importancia de las mismas."
-              tiempoDesde={tiempoDesde("2025-08-23T15:00:00")}
-            />
+          <CardImagePost
+            image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671469/b4cafhwzexawzrqoygxr.webp"
+            title="Entendiendo sus exámenes prenatales a tiempo"
+            description="Análisis de las pruebas más comunes y su importancia de las mismas."
+            tiempoDesde={tiempoDesde("2025-08-23T15:00:00")}
+          />
 
-            <CardImagePost
-              image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671362/k5jf85g0igeoiogxlxtd.webp"
-              title="Recuperación posparto: Guía semana a semana."
-              description="Consejos prácticos para la curación y la adaptación después del parto"
-              tiempoDesde={tiempoDesde("2025-08-20T19:00:00")}
-            />
-          </div>
+          <CardImagePost
+            image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671362/k5jf85g0igeoiogxlxtd.webp"
+            title="Recuperación posparto: Guía semana a semana."
+            description="Consejos prácticos para la curación y la adaptación después del parto"
+            tiempoDesde={tiempoDesde("2025-08-20T19:00:00")}
+          />
         </div>
       </div>
 
-      <div className="border border-FondoCeleste w-full py-[56px] flex px-[40px] bg-FondoCeleste">
-        <div className="flex flex-col w-full">
-          <p className="max-w-max font-semibold text-azulServicio pt-[24px] pl-[24px] text-[34px] leading-[36px]">
+      <div className="border border-FondoCeleste flex flex-col bg-FondoCeleste w-full justify-center items-center">
+        <div className=" max-w-[1920px] py-[56px] px-[40px]">
+          <p className="font-semibold text-azulServicio pt-[24px] pl-[24px] text-[34px] leading-[36px]">
             Testimonios de Familias
           </p>
           <div className="flex items-center pt-[8px] pb-[24px] px-[24px]">
-            <p className="max-w-max font-semibold text-grissubtexto">
+            <p className=" font-semibold text-grissubtexto">
               Comentarios reales de pacientes a los que hemos apoyado.
             </p>
           </div>
 
-          <div className="grid grid-cols-3 gap-16 w-full px-[17px] ">
+          <div className="grid grid-cols-3 gap-16 px-[17px] ">
             <CardTestimony
               image="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756846840/wf7gzl1qkjp61oeucvgs.webp"
               title="German Arteaga"
@@ -199,27 +197,25 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="w-full flex pt-[80px] pb-[56px] px-[64px]">
-        <div className="flex flex-col w-full">
-          <div className="flex justify-center w-full">
-            <div className=" bg-celesteContacto rounded-xl px-[16px] py-[24px] flex justify-between items-center gap-[8px] w-full">
-              <span className=" text-NegroContacto text-[24px] font-semibold max-w-max">
-                ¿Listo para hablar con un obstetra?
-                <p className=" text-NegroContacto font-semibold text-[16px] leading-[24px] mt-[6px]">
-                  Programe una consulta para discutir sus necesidades y próximos
-                  pasos.
-                </p>
-              </span>
-              <div className="flex gap-[12px]">
-                <button className=" flex bg-botonAzul items-center text-letraBlanca gap-[8px] rounded-xl px-[16px] py-[12px]">
-                  <TbCalendarEvent /> Programar consulta
-                </button>
-                <button className=" flex bg-FondoCeleste items-center text-azulServicio font-semibold gap-[8px] rounded-xl px-[16px] py-[12px]">
-                  <FiMessageSquare /> Contactanos
-                </button>
-              </div>
+      <div className="border border-FondoCeleste bg-full w-full flex flex-col justify-center items-center">
+        <div className="max-w-[1920px] flex flex-col pt-[80px] pb-[56px] px-[64px]">
+          <section className=" bg-celesteContacto rounded-xl px-[16px] py-[24px] flex justify-between items-center gap-[8px] w-full">
+            <span className=" text-NegroContacto text-[24px] font-semibold max-w-max">
+              ¿Listo para hablar con un obstetra?
+              <h1 className=" text-NegroContacto font-semibold text-[16px] leading-[24px] mt-[6px]">
+                Programe una consulta para discutir sus necesidades y próximos
+                pasos.
+              </h1>
+            </span>
+            <div className="flex gap-[12px]">
+              <button className=" flex bg-botonAzul items-center text-letraBlanca gap-[8px] rounded-xl px-[16px] py-[12px]">
+                <TbCalendarEvent /> Programar consulta
+              </button>
+              <button className=" flex bg-FondoCeleste items-center text-azulServicio font-semibold gap-[8px] rounded-xl px-[16px] py-[12px]">
+                <FiMessageSquare /> Contactanos
+              </button>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
