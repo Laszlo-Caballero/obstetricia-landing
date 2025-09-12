@@ -22,7 +22,7 @@ export default function Page() {
   return (
     <div className="h-full w-full">
       <div className="pt-[56px] flex pb-[48px] px-[40px]">
-        <div className="border border-white w-full py-[36px] ">
+        <div className="border border-white w-full py-[15px] ">
           <span className="flex gap-x-[6px] bg-compassionate max-w-max rounded-xl p-1">
             <PiStarFourLight className="text-care size-4" />
             <p className=" text-xs font-semibold text-care">
@@ -45,12 +45,12 @@ export default function Page() {
 
           <div className="flex gap-3 mt-[24px]">
             <button className=" flex items-center  bg-botonAzul text-letraBlanca px-[16px] py-[12.5px] rounded-xl font-semibold max-w-max gap-[8px]">
-              <SiGooglemaps /> Encuentra una Obstetra
+              <SiGooglemaps /> Encuentra una Posta
             </button>
 
-            <button className=" flex items-center bg-FondoCeleste text-azulLeer px-[16px] py-[12.5px] rounded-xl font-semibold max-w-max gap-[8px]">
+            {/* <button className=" flex items-center bg-FondoCeleste text-azulLeer px-[16px] py-[12.5px] rounded-xl font-semibold max-w-max gap-[8px]">
               <CgNotes /> Leer ultima publicación
-            </button>
+            </button> */}
           </div>
         </div>
 

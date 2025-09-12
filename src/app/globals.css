@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-/* #f6fafe este el color del bg de la vista  de contacto  */
-
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -28,4 +26,5 @@
   --color-celesteContacto: #a7d8e8;
   --color-NegroContacto: #04303a;
   --color-fondoblanco: #ffffff;
+  --color-full: #f6fafe;
 }

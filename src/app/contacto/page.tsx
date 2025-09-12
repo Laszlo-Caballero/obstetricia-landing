@@ -134,7 +134,7 @@ export default function page() {
                 description=" 123 Care Ave, Suite 200"
               />
             </div>
-            <div className="border border-bordeColumn rounded-xl w-full h-[270px] mt-2">
+            <div className=" w-full h-[270px] mt-2">
               <CardMap />
             </div>
 
