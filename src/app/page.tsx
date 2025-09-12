@@ -58,7 +58,7 @@ export default function Page() {
           <div className="w-[463px] h-[300px] rounded-xl">
             <Image
               src="https://res.cloudinary.com/dl0wif5vm/image/upload/v1756671331/rxjesxmo9h5eefgifc3e.webp"
-              alt="Imagen demostrativa"
+              alt="Pareja embarazada centrada con un fondo celeste, mirando ambos la barriga de la mujer"
               width={463}
               height={300}
               className="h-full w-full object-cover rounded-xl"
